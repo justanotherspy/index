@@ -1,0 +1,175 @@
+{
+  "version": "1.0",
+  "generated": "2025-08-23T16:46:06.191187",
+  "root": "/home/daniel/claude/index",
+  "stats": {
+    "total_files": 15,
+    "by_type": {
+      "sh": 2,
+      "md": 2,
+      "json": 2,
+      "log": 1,
+      "py": 8
+    },
+    "by_purpose": {
+      "documentation": 2,
+      "script": 8
+    }
+  },
+  "structure": {
+    "install.sh": {
+      "type": "sh",
+      "purpose": "",
+      "importance": "normal"
+    },
+    "setup_hooks.sh": {
+      "type": "sh",
+      "purpose": "",
+      "importance": "normal"
+    },
+    "HOOKS_README.md": {
+      "type": "md",
+      "purpose": "documentation",
+      "importance": "normal"
+    },
+    ".claude": {
+      ".index.json": {
+        "type": "json",
+        "purpose": "",
+        "importance": "normal"
+      },
+      "settings.json": {
+        "type": "json",
+        "purpose": "",
+        "importance": "normal"
+      },
+      "bash_history.log": {
+        "type": "log",
+        "purpose": "",
+        "importance": "normal"
+      },
+      "commands": {
+        "readup.md": {
+          "type": "md",
+          "purpose": "documentation",
+          "importance": "normal"
+        }
+      },
+      "hooks": {
+        "test_validator.py": {
+          "type": "py",
+          "purpose": "script",
+          "importance": "high"
+        },
+        "readup_injector.py": {
+          "type": "py",
+          "purpose": "script",
+          "importance": "high"
+        },
+        "indexer.py": {
+          "type": "py",
+          "purpose": "script",
+          "importance": "high"
+        },
+        "git_smart_committer.py": {
+          "type": "py",
+          "purpose": "script",
+          "importance": "high"
+        },
+        "todo_persister.py": {
+          "type": "py",
+          "purpose": "script",
+          "importance": "high"
+        },
+        "session_loader.py": {
+          "type": "py",
+          "purpose": "script",
+          "importance": "high"
+        },
+        "context_optimizer.py": {
+          "type": "py",
+          "purpose": "script",
+          "importance": "high"
+        },
+        "manual_index.py": {
+          "type": "py",
+          "purpose": "script",
+          "importance": "high"
+        }
+      }
+    }
+  },
+  "critical_files": [
+    ".claude/hooks/test_validator.py",
+    ".claude/hooks/readup_injector.py",
+    ".claude/hooks/indexer.py",
+    ".claude/hooks/git_smart_committer.py",
+    ".claude/hooks/todo_persister.py",
+    ".claude/hooks/session_loader.py",
+    ".claude/hooks/context_optimizer.py",
+    ".claude/hooks/manual_index.py"
+  ],
+  "entry_points": [],
+  "test_files": [],
+  "dependencies_graph": {
+    ".claude/hooks/test_validator.py": [
+      "json",
+      "os",
+      "pathlib",
+      "sys",
+      "subprocess"
+    ],
+    ".claude/hooks/readup_injector.py": [
+      "json",
+      "os",
+      "pathlib",
+      "sys",
+      "re"
+    ],
+    ".claude/hooks/indexer.py": [
+      "json",
+      "os",
+      "pathlib",
+      "datetime",
+      "hashlib",
+      "sys",
+      "re"
+    ],
+    ".claude/hooks/git_smart_committer.py": [
+      "json",
+      "pathlib",
+      "sys",
+      "subprocess",
+      "re"
+    ],
+    ".claude/hooks/todo_persister.py": [
+      "json",
+      "os",
+      "pathlib",
+      "datetime",
+      "sys"
+    ],
+    ".claude/hooks/session_loader.py": [
+      "json",
+      "os",
+      "pathlib",
+      "datetime",
+      "sys",
+      "subprocess"
+    ],
+    ".claude/hooks/context_optimizer.py": [
+      "json",
+      "os",
+      "pathlib",
+      "datetime",
+      "sys"
+    ],
+    ".claude/hooks/manual_index.py": [
+      "json",
+      "os",
+      "pathlib",
+      "indexer",
+      "sys"
+    ]
+  }
+}

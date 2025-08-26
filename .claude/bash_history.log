@@ -1,0 +1,20 @@
+[./setup_hooks.sh] Test the fixed setup script
+[jq '.stats' .claude/.index.json] Check index statistics
+[~/.claude-code-docs/claude-docs-helper.sh] List available documentation topics
+[chmod +x install.sh] Make the install script executable
+[bash -n install.sh] Check bash syntax of install script
+[shellcheck install.sh] Run shellcheck on install script
+[shellcheck install.sh] Run shellcheck again to verify fixes
+[CLAUDE_HOOKS_REPO="." ./install.sh 2>&1 | head -20] Test install script locally with limited output
+[echo "Testing dependency checks only..." && bash -c 'cd /tmp && python3 -c "import sys; exit(0 if sys.version_info >= (3, 6) else 1)" && echo "Python version check: PASS"'] Test Python version check function
+[find /home/daniel/claude -name ".claude" -type d] Find .claude directories
+[ls -la /home/daniel/claude/luno-balance/.claude/] List contents of luno-balance .claude directory
+[ls -la /home/daniel/claude/.claude/] List contents of main .claude directory
+[find /home/daniel -name "*hook*" -type f 2>/dev/null | head -10] Find hook files in system
+[git init] Initialize git repository
+[git add README.md] Add README.md to staging
+[git commit -m "first commit"] Create first commit
+[git branch -M main] Rename branch to main
+[git remote add origin git@github.com:justanotherspy/index.git] Add remote origin
+[git push -u origin main] Push to GitHub and set upstream
+[git add .] Add all files to staging
