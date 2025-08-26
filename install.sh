@@ -5,7 +5,7 @@ set -euo pipefail
 # This script can be run via: curl -sSL <URL> | bash
 
 # Configuration
-REPO_URL="${CLAUDE_HOOKS_REPO:-https://github.com/YOUR_USERNAME/YOUR_REPO}"
+REPO_URL="${CLAUDE_HOOKS_REPO:-https://github.com/justanotherspy/index}"
 BRANCH="${CLAUDE_HOOKS_BRANCH:-main}"
 INSTALL_DIR=".claude"
 TEMP_DIR=""
