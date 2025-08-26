@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generated": "2025-08-26T23:02:31.034426",
+  "generated": "2025-08-26T23:03:46.883479",
   "root": "/home/daniel/claude/index",
   "stats": {
     "total_files": 15,
@@ -17,7 +17,7 @@
     }
   },
   "structure": {
-    "install.sh": {
+    "install_index.sh": {
       "type": "sh",
       "purpose": "",
       "importance": "normal"
@@ -114,62 +114,62 @@
   "dependencies_graph": {
     ".claude/hooks/test_validator.py": [
       "os",
-      "json",
-      "sys",
       "subprocess",
-      "pathlib"
+      "json",
+      "pathlib",
+      "sys"
     ],
     ".claude/hooks/readup_injector.py": [
+      "re",
       "os",
       "json",
-      "sys",
       "pathlib",
-      "re"
+      "sys"
     ],
     ".claude/hooks/indexer.py": [
+      "re",
       "os",
       "json",
       "hashlib",
-      "sys",
+      "datetime",
       "pathlib",
-      "re",
-      "datetime"
+      "sys"
     ],
     ".claude/hooks/git_smart_committer.py": [
-      "json",
-      "sys",
+      "re",
       "subprocess",
+      "json",
       "pathlib",
-      "re"
+      "sys"
     ],
     ".claude/hooks/todo_persister.py": [
       "os",
       "json",
-      "sys",
+      "datetime",
       "pathlib",
-      "datetime"
+      "sys"
     ],
     ".claude/hooks/session_loader.py": [
       "os",
-      "json",
-      "sys",
       "subprocess",
+      "json",
+      "datetime",
       "pathlib",
-      "datetime"
+      "sys"
     ],
     ".claude/hooks/context_optimizer.py": [
       "os",
       "json",
-      "sys",
+      "datetime",
       "pathlib",
-      "datetime"
+      "sys"
     ],
     ".claude/hooks/manual_index.py": [
       "os",
       "indexer",
       "json",
-      "sys",
-      "pathlib"
+      "pathlib",
+      "sys"
     ]
   }
 }

@@ -35,7 +35,7 @@ A comprehensive hook system that gives Claude Code better context and tools for 
 
 ### One-Line Installation (Recommended)
 ```bash
-curl -sSL https://github.com/YOUR_USERNAME/YOUR_REPO/raw/main/install.sh | bash
+curl -sSL https://github.com/YOUR_USERNAME/YOUR_REPO/raw/main/install_index.sh | bash
 ```
 
 ### Alternative Installation Methods
@@ -43,18 +43,18 @@ curl -sSL https://github.com/YOUR_USERNAME/YOUR_REPO/raw/main/install.sh | bash
 #### Manual Download & Install
 ```bash
 # Download the installer
-curl -O https://github.com/YOUR_USERNAME/YOUR_REPO/raw/main/install.sh
-chmod +x install.sh
+curl -O https://github.com/YOUR_USERNAME/YOUR_REPO/raw/main/install_index.sh
+chmod +x install_index.sh
 
 # Run the installer
-./install.sh
+./install_index.sh
 ```
 
 #### Local Development Setup
 If you've cloned the repository:
 ```bash
 # Run the local setup script
-./install.sh
+./install_index.sh
 
 # Or use the old setup script if files already exist
 ./setup_hooks.sh

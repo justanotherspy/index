@@ -33,7 +33,7 @@ trap cleanup EXIT
 check_pipe() {
     if [[ -t 0 ]]; then
         log_error "This script should be run via: curl -sSL <URL> | bash"
-        log_error "Or download and run: ./install.sh"
+        log_error "Or download and run: ./install_index.sh"
         exit 1
     fi
 }
